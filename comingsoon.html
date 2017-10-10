@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="material-angular/images/icons/icon_short.ico">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="material-angular/css/angular-material.min.css" type="text/css">
+  <link rel="stylesheet" href="material-angular/css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="material-angular/css/mascode.css" type="text/css">
+  <link rel="stylesheet" href="material-angular/css/animate.css" type="text/css">
+  <title>mascode</title>
+</head>
+<body ng-app="MyApp" ng-controller="AppControl">
+  <div id="body-load" ng-show="isLoading"><div class="spinner"></div></div>
+    <div ng-cloak class="gridListdemoBasicUsage">
+      <md-content>
+        <div layout="column" class="white">
+          <div flex="100" class="header">
+            <a href="index.html">
+            <svg class="svg-logo" viewBox="0 0 145 154">
+              <g id="Layer_x0020_1">
+               <metadata id="CorelCorpID_0Corel-Layer"/>
+               <g id="_535892438128">
+                 <path class="fil1-b" d="M15 99c-3,-1 -6,-3 -9,-5 -4,-4 -6,-10 -6,-16 0,-5 2,-11 6,-15 4,-4 9,-6 15,-6l0 6c-4,0 -8,2 -11,4 -3,3 -4,7 -4,11 0,5 1,9 4,12 2,2 5,3 7,4 5,1 3,7 -2,5z"/>
+                 <path class="fil1-b" d="M42 37c7,0 13,3 18,8 5,4 8,11 8,18 0,7 -3,13 -8,18 -5,5 -11,8 -18,8 -7,0 -13,-3 -18,-8 -5,-5 -8,-11 -8,-18 0,-7 3,-14 8,-18 5,-5 11,-8 18,-8zm14 12c-4,-4 -9,-6 -14,-6 -6,0 -11,2 -14,6 -4,3 -6,8 -6,14 0,5 2,10 6,14 3,4 8,6 14,6 5,0 10,-2 14,-6 4,-4 6,-9 6,-14 0,-6 -2,-11 -6,-14z"/>
+                 <path class="fil1-b" d="M102 37c7,0 14,3 18,8 5,4 8,11 8,18 0,7 -3,13 -8,18 -4,5 -11,8 -18,8 -7,0 -13,-3 -18,-8 -5,-5 -7,-11 -7,-18 0,-7 2,-14 7,-18 5,-5 11,-8 18,-8zm14 12c-3,-4 -8,-6 -14,-6 -5,0 -10,2 -14,6 -4,3 -6,8 -6,14 0,5 2,10 6,14 4,4 9,6 14,6 6,0 11,-2 14,-6 4,-4 6,-9 6,-14 0,-6 -2,-11 -6,-14z"/>
+                 <polygon class="fil1-b" points="65,60 79,60 79,66 65,66 "/>
+                 <path class="fil1-b" d="M50 100c0,5 3,9 8,9l8 0c2,0 4,3 4,3 1,2 4,2 4,0 0,0 2,-3 5,-3l7 0c5,0 8,-4 8,-9l0 0c0,-1 -1,-2 -2,-2 -1,0 -3,1 -3,2l0 0c0,2 -1,4 -3,4l-7 0c-3,0 -5,1 -7,3 -1,-2 -4,-3 -6,-3l-8 0c-2,0 -3,-2 -3,-4l0 0c0,-1 -1,-2 -3,-2 -1,0 -2,1 -2,2l0 0z"/>
+                 <path class="fil1-b" d="M50 65c0,0 0,0 0,0l0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0c1,0 1,0 1,0l0 0 0 0 0 0 0 0 0 0 0 0 0 0c0,0 0,-1 0,-1l0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0c0,0 0,-1 0,-1l0 0 0 0 0 0 0 0 0 0 0 0 0 0c0,0 0,0 -1,0l0 0 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0c0,0 0,0 0,0l-11 -6c-1,-1 -2,0 -3,1 -1,1 0,2 1,3l7 4 -7 4c-1,1 -2,2 -1,3 1,1 2,2 3,1l11 -6z"/>
+                 <path class="fil1-b" d="M94 61l0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0c0,0 0,1 0,1l0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0c0,0 0,1 0,1l0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0c0,0 1,0 1,1l0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0c0,0 0,0 0,0l0 0 0 0 0 0c0,0 0,0 0,0l0 0 0 0 11 6c1,1 3,0 3,-1 1,-1 0,-2 -1,-3l-7 -4 7 -4c1,-1 2,-2 1,-3 0,-1 -2,-2 -3,-1l-11 6c0,0 0,0 0,0z"/>
+                 <path class="fil0-b" d="M8 65c-1,0 -10,-10 -3,-17 -6,-4 -8,-20 3,-22 -4,-24 21,-32 37,-21 11,-3 20,1 27,7 7,-6 16,-10 27,-7 17,-11 41,-3 37,21 11,2 9,18 3,22 7,7 -2,17 -3,17 0,0 -11,-5 -11,-5 0,0 1,-11 -15,-18 -16,-7 -27,9 -27,9l-3 0c-1,4 -4,6 -8,6 -4,0 -7,-2 -8,-6l-2 0c0,0 -12,-16 -28,-9 -16,7 -15,18 -15,18 0,0 -11,5 -11,5z"/>
+                 <path class="fil1-b" d="M130 99c3,-1 6,-3 9,-5 4,-4 6,-10 6,-16 0,-5 -2,-11 -6,-15 -4,-4 -9,-6 -15,-6l0 6c4,0 8,2 11,4 3,3 4,7 4,11 0,5 -1,9 -4,12 -2,2 -5,3 -7,4 -4,1 -3,7 2,5z"/>
+               </g>
+               <g>
+                 <text x="1" y="150" class="txt-svg-b">Mas<tspan x="65" y="150" style="font-weight:bold;" >code</tspan></text>
+               </g>
+              </g>
+            </svg>
+            </a>
+          </div>
+        </div>
+        <div layout="column" class="white">
+          <div flex="100" class="align-center">
+            <div class="background-coming">
+              <img src="material-angular/images/icons/COMING.svg" alt="" class="img-c1-coming" />
+            </div>
+          </div>
+        </div>
+        <div layout="row" layout-sm="column" layout-xs="column" class="footer white" layout-align="space-between center">
+          <div class="align-center sosmed-t-m-footer" style="z-index:99;">
+            <a class="menu-link" href="about.html">TENTANG</a>
+            <a class="menu-link" href="lab.html">LAB</a>
+            <a class="menu-link" href="comingsoon.html">EDU</a>
+            <a class="menu-link" href="comingsoon.html">WOW</a>
+            <a class="menu-link" href="index.html">UTAMA</a>
+          </div>
+          <div class="align-center sosmed-b-m-footer sosmed-t-m-footer" style="z-index:99;">
+            <md-button href="https://www.facebook.com/mascodeid/" target="_blank" class="md-icon-button" aria-label="Settings">
+              <img src="material-angular/images/icons/facebook.svg" alt="" />
+            </md-button>
+            <md-button href="https://www.instagram.com/mascode.id/" target="_blank" class="md-icon-button" aria-label="Favorite">
+              <img src="material-angular/images/icons/instagram.svg" alt="" />
+            </md-button>
+            <md-button href="https://github.com/mascodeid" target="_blank" class="md-icon-button" aria-label="Favorite">
+              <img src="material-angular/images/icons/github.svg" alt="" />
+            </md-button>
+          </div>
+        </div>
+        <div layout="row" layout-sm="column" class="footer white" style="z-index:99;"><div class="line"></div></div>
+        <div layout="row" layout-sm="column" layout-xs="column" class="footer-2 white" layout-align="space-between center" style="z-index:99;">
+          <div class="align-center">
+            <p class="font-footer">contact@mascode.id</p>
+          </div>
+          <div class="align-center">
+            <p class="font-footer">&copy; 2016 Mascode, All Rights Reserved.</p>
+          </div>
+        </div>
+      </md-content>
+    </div>
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src='material-angular/js/angular.min.js'></script>
+  <script src='material-angular/js/angular-animate.min.js'></script>
+  <script src='material-angular/js/angular-route.min.js'></script>
+  <script src='material-angular/js/angular-aria.min.js'></script>
+  <script src='material-angular/js/angular-messages.min.js'></script>
+  <!-- Angular Material Library -->
+  <script src='material-angular/js/angular-material.min.js'></script>
+  <!-- mascode-angular -->
+  <script src='material-angular/js/mascode-angular.js'></script>
+  <!-- WOW js -->
+  <script src='material-angular/js/wow.min.js'></script>
+  <!-- mascode js -->
+  <script src='material-angular/js/mascode.js'></script>
+</body>
+</html>

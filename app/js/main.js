@@ -26,4 +26,5 @@ $(document).ready(function(){
       autoplay: true,
       autoplaySpeed: 5000,
     });
+    $('.slick-track').css('padding', '20px 0');
 });

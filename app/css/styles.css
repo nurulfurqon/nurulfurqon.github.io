@@ -21,13 +21,26 @@ p {
   font-size: 15px;
   line-height: 22px; }
 
+.slick-prev {
+  left: 10px;
+  z-index: 9; }
+
+.slick-next {
+  right: 30px;
+  z-index: 9; }
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px; }
+
 .bg {
   width: 100%;
   height: 768px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .bg--page-home {
-  background: url(../images/bg-jelajah-ambarawa-tiketcom-small.jpg) no-repeat center center;
+  background: url(../images/bg-jelajah-raja-ampat-tiketcom-small.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -46,26 +59,56 @@ p {
   overflow: hidden;
   display: block; }
 
-.promo {
+.promo__box {
   width: 100%;
-  height: 500px;
   overflow: hidden;
   display: flex;
-  align-items: center;
   justify-content: center; }
 
+.promo__title {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0 0; }
+
+.promo__title--content {
+  overflow: hidden;
+  position: relative; }
+  .promo__title--content h1 {
+    font-size: 70px;
+    letter-spacing: 10px;
+    color: #fedd00;
+    margin: 13px 15px 0 23px;
+    padding: 0;
+    position: relative;
+    z-index: 55; }
+  .promo__title--content .icon-plus {
+    top: 0;
+    width: 18px;
+    position: absolute; }
+  .promo__title--content .icon-spiral {
+    z-index: 22;
+    bottom: 40px;
+    width: 50px;
+    right: 0;
+    position: absolute; }
+
 .promo__banner-content {
-  width: 970px;
-  height: 250px;
-  background-color: #f5f5f5;
+  width: 1300px;
+  padding: 20px 0;
+  background-color: #fff;
   display: flex;
   align-items: center; }
 
 .display-banner {
-  width: 450px;
-  height: 120px;
-  background-color: #333333;
-  margin: 0 25px; }
+  width: 970px;
+  height: 344px;
+  text-align: center;
+  background-color: #fff;
+  margin: 0 25px;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25); }
 
 .about {
   width: 100%;
@@ -77,7 +120,6 @@ p {
 
 .about__box-content {
   width: 1024px;
-  height: 250px;
   overflow: hidden;
   display: flex;
   flex-direction: row; }
@@ -87,9 +129,33 @@ p {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .about__img-content .img-about {
+    width: 370px; }
 
 .about__txt-content {
-  width: 50%; }
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #222; }
+  .about__txt-content h2 {
+    margin: 0 0 10px 0;
+    padding: 0; }
+
+.button {
+  width: 118px;
+  padding: 10px 20px;
+  overflow: hidden;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none; }
+
+.button:hover {
+  opacity: 0.7; }
+
+.button--primary {
+  background-color: #ff7200; }
 
 .header {
   z-index: 999;

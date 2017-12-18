@@ -40,7 +40,7 @@ p {
   position: relative; }
 
 .bg--page-home {
-  background: url(../images/bg-jelajah-raja-ampat-tiketcom-small.jpg) no-repeat center center;
+  background: url(../images/bg-jelajah-raja-ampat-tiketcom-small.jpg) no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

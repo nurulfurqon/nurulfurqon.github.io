@@ -1,0 +1,56 @@
+.header
+  z-index: 999
+  width: 80%
+  overflow: hidden
+  padding: 25px 10%
+  position: fixed
+  display: flex
+  flex-direction: row
+  align-items: center
+  -ms-transition:     all 0.2s ease-out
+  -moz-transition:    all 0.2s ease-out
+  -webkit-transition: all 0.2s ease-out
+  -o-transition:      all 0.2s ease-out
+  transition:         all 0.2s ease-out
+
+.header--scroll
+  background-color: #0365d2
+  webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,.08)
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,.08)
+
+.header__box-one
+  width: 25%
+  overflow: hidden
+
+.header__box-two
+  width: 75%
+  overflow: hidden
+  text-align: right
+
+.header__logo
+  width: 180px
+  display: block
+  overflow: hidden
+
+.header__list
+  list-style: none
+  text-align: right
+  color: #fff
+
+  & li
+    display: inline
+
+  & li a
+    padding: 10px 0
+    margin: 0 15px
+    font-size: 15px
+    color: #ffffff
+    line-height: 12px
+    text-decoration: none
+    -webkit-transition: border-bottom 0.2s
+    transition: border-bottom 0.2s
+
+  & li a:hover
+    color: #fedd00
+    border-bottom: 3px solid #fedd00
+

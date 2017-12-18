@@ -95,7 +95,7 @@ p {
     position: absolute; }
 
 .promo__banner-content {
-  width: 1300px;
+  width: 100%;
   padding: 20px 0;
   background-color: #fff;
   display: flex;

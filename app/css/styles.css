@@ -6,7 +6,8 @@ html,
 body {
   font-family: SamsungSans-Regular,Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #f5f5f5; }
 
 h1 {
   font-size: 40px; }
@@ -16,6 +17,9 @@ h2 {
 
 h3 {
   font-size: 25px; }
+
+h4 {
+  font-size: 20px; }
 
 p {
   font-size: 15px;
@@ -35,7 +39,7 @@ p {
 
 .bg {
   width: 100%;
-  height: 768px;
+  height: 830px;
   overflow: hidden;
   position: relative; }
 
@@ -61,22 +65,24 @@ p {
 
 .promo__box {
   width: 100%;
+  background-color: #ffffff;
   overflow: hidden;
   display: flex;
   justify-content: center; }
 
 .promo__title {
   width: 100%;
+  background-color: #ffffff;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  margin: 50px 0 0 0; }
+  margin: 0; }
 
 .promo__title--content {
   overflow: hidden;
   position: relative; }
   .promo__title--content h1 {
-    font-size: 70px;
+    font-size: 60px;
     letter-spacing: 10px;
     color: #fedd00;
     margin: 13px 15px 0 23px;
@@ -89,7 +95,7 @@ p {
     position: absolute; }
   .promo__title--content .icon-spiral {
     z-index: 22;
-    bottom: 40px;
+    bottom: 30px;
     width: 50px;
     right: 0;
     position: absolute; }
@@ -113,6 +119,7 @@ p {
 .about {
   width: 100%;
   padding: 100px 0;
+  background-color: #ffffff;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -130,7 +137,7 @@ p {
   align-items: center;
   justify-content: center; }
   .about__img-content .img-about {
-    width: 370px; }
+    width: 350px; }
 
 .about__txt-content {
   width: 50%;
@@ -141,9 +148,10 @@ p {
   .about__txt-content h2 {
     margin: 0 0 10px 0;
     padding: 0; }
+  .about__txt-content .icon-spiral {
+    width: 100px; }
 
 .button {
-  width: 118px;
   padding: 10px 20px;
   overflow: hidden;
   border-radius: 4px;
@@ -157,6 +165,99 @@ p {
 .button--primary {
   background-color: #ff7200; }
 
+.step {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #f5f5f5; }
+
+.step__title-content {
+  width: 100%;
+  text-align: center; }
+
+.step__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.box-step {
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  overflow: hidden; }
+
+.register {
+  width: 100%;
+  position: relative;
+  padding: 120px 0 70px 0;
+  background-color: #0365d2;
+  z-index: 1; }
+
+.register__title {
+  width: 100%;
+  padding: 0 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  color: #222; }
+  .register__title h2 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff; }
+
+.register__text {
+  width: 100%;
+  padding: 0 0 50px 0;
+  overflow: hidden;
+  text-align: center;
+  color: #ffffff; }
+
+.form-register {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 40px 0;
+  z-index: 10; }
+
+.form-register__box {
+  width: 500px;
+  padding: 20px 15px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(27, 27, 27, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(27, 27, 27, 0.2);
+  margin-top: -80px; }
+  .form-register__box .box__header {
+    width: 100%;
+    text-align: center; }
+    .form-register__box .box__header h4 {
+      margin: 0;
+      padding: 0;
+      color: #222; }
+  .form-register__box .box__content {
+    width: 100%;
+    padding: 30px 0; }
+  .form-register__box .form__group {
+    margin-bottom: 1rem; }
+  .form-register__box label {
+    color: #222222;
+    font-size: 15px; }
+  .form-register__box input[type=text],
+  .form-register__box input[type=email],
+  .form-register__box select {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box; }
+
 .header {
   z-index: 999;
   width: 80%;
@@ -166,6 +267,24 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  -ms-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+
+.header-more {
+  z-index: 999;
+  width: 80%;
+  overflow: hidden;
+  padding: 12px 10%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #0365d2;
+  webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
   -ms-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;

@@ -7,6 +7,7 @@ body
   font-family: SamsungSans-Regular,Arial, Helvetica, sans-serif
   margin: 0
   padding: 0
+  background-color: #f5f5f5
 
 h1
   font-size: 40px
@@ -14,6 +15,8 @@ h2
   font-size: 30px
 h3
   font-size: 25px
+h4
+  font-size: 20px
 
 p
   font-size: 15px
@@ -37,12 +40,12 @@ p
 // set backgrouund image content
 .bg 
   width: 100%
-  height: 768px
+  height: 830px
   overflow: hidden
   position: relative
 
 .bg--page-home
-  background: url(../images/bg-jelajah-raja-ampat-tiketcom-small.jpg) no-repeat center center
+  background: url(../images/bg-jelajah-raja-ampat-tiketcom-small.jpg) no-repeat center bottom
   -webkit-background-size: cover
   -moz-background-size: cover
   -o-background-size: cover
@@ -63,23 +66,25 @@ p
 
 .promo__box
   width: 100%
+  background-color: #ffffff
   overflow: hidden
   display: flex
   justify-content: center
 
 .promo__title
   width: 100%
+  background-color: #ffffff
   overflow: hidden
   display: flex
   justify-content: center
-  margin: 50px 0 0 0
+  margin: 0
 
 .promo__title--content
   overflow: hidden
   position: relative
 
   & h1 
-    font-size: 70px
+    font-size: 60px
     letter-spacing: 10px
     color: #fedd00
     margin: 13px 15px 0 23px
@@ -94,13 +99,13 @@ p
 
   .icon-spiral
     z-index: 22
-    bottom: 40px
+    bottom: 30px
     width: 50px
     right: 0
     position: absolute
 
 .promo__banner-content
-  width: 1300px
+  width: 100%
   padding: 20px 0
   background-color: #fff
   display: flex
@@ -118,6 +123,7 @@ p
 .about
   width: 100%
   padding: 100px 0
+  background-color: #ffffff
   overflow: hidden
   display: flex
   align-items: center
@@ -136,7 +142,7 @@ p
   justify-content: center
 
   .img-about
-    width: 370px
+    width: 350px
 
 .about__txt-content
   width: 50%
@@ -149,8 +155,10 @@ p
     margin: 0 0 10px 0
     padding: 0
 
+  .icon-spiral 
+    width: 100px
+
 .button
-  width: 118px 
   padding: 10px 20px
   overflow: hidden
   border-radius: 4px
@@ -163,3 +171,25 @@ p
 
 .button--primary
   background-color: #ff7200
+
+.step
+  width: 100%
+  padding: 100px 0
+  background-color: #f5f5f5
+
+.step__title-content
+  width: 100%
+  text-align: center
+
+.step__content
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+.box-step
+  width: 200px
+  height: 200px
+  background-color: #ffffff
+  overflow: hidden

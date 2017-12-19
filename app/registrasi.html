@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.14/jquery.datetimepicker.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- endbuild -->
+    <title>Registrasi</title>
+</head>
+<body>
+    <div class="header-more">
+        <div class="header__box-one">
+            <a href="index.html">
+                <img class="header__logo" src="images/logo-tiketcom.png" alt="tiketcom pesan tiket kemanapun" srcset="">
+            </a>
+        </div>
+        <div class="header__box-two">
+            <ul class="header__list">
+                <li><a href="">Berita</a></li>
+                <li><a href="">Persyaratan</a></li>
+                <li><a href="">Peserta</a></li>
+                <li><a href="">Bantuan</a></li>
+                <li><a href="registrasi.html">Registrasi</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="register">
+        <div class="register__title">
+            <h2>Registrasi</h2>
+        </div>
+        <div class="register__text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sequi corrupti recusandae <br> excepturi reprehenderit accusamus
+                odio modi nobis dignissimos consequatur. Incidunt harum eos suscipit <br> reiciendis dolorum quisquam magnam adipisci quia amet.</p>
+        </div>
+    </section>
+    <section class="form-register">
+        <div class="form-register__box">
+            <div class="box__header">
+                <h4>Form Registrasi</h4>                
+            </div>
+            <div class="box__content">
+                <form action="">
+                    <div class="form__group">
+                        <label for="fname">Nama</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Nama..">
+                    </div>
+                    <div class="form__group">
+                        <label for="tempat-lahir">Tempat Lahir</label>
+                        <input type="text" id="tempat-lahir" name="tempatlahir" placeholder="Tempat Lahir..">
+                    </div>
+                    <div class="form__group">
+                        <label for="tgl-lahir">Tanggal Lahir</label>
+                        <input type="text" id="tgl-lahir" name="tanggallahir" placeholder="Tanggal Lahir..">
+                    </div>
+                    <div class="form__group">
+                        <label for="jenis-kelamin">Jenis Kelamin</label><br>
+                    </div>
+                    <div class="form__group">
+                        <label>
+                            <input id="jenis-kelamin" type="radio" name="jeniskelamin" value="1" /> Laki-Laki
+                        </label> 
+                        <label>
+                            <input id="jenis-kelamin" type="radio" name="jeniskelamin" value="2" /> Perempuan
+                        </label>
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email..">
+                    </div>
+                    <div class="form__group">
+                        <label for="fname">No Telepon</label>
+                        <input type="text" id="notlp" name="telepon" placeholder="No telepon">
+                    </div>
+                    <div class="form__group">
+                        <label for="fname">Instagram</label>
+                        <input type="text" id="notlp" name="telepon" placeholder="No telepon">
+                    </div>
+                    <div class="form__group">
+                        <label for="pilih-blog">Apakah anda memiliki blog ?</label><br>
+                    </div>
+                    <div class="form__group">
+                        <label>
+                            <input id="pilih-blog" type="radio" name="pilihblog" value="1" /> Ya
+                        </label> 
+                        <label>
+                            <input id="pilih-blog" type="radio" name="pilihblog" value="2" /> Tidak
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.14/jquery.datetimepicker.full.min.js"></script>
+    <script>
+        jQuery.datetimepicker.setLocale('id');
+        jQuery('#tgl-lahir').datetimepicker({
+            timepicker:false,
+            format:'d/m/Y'
+        });
+    </script>
+    <!--build:js js/main.min.js -->
+    <!--<script src="js/main.js"></script>-->
+    <!-- endbuild -->
+</body>
+</html>

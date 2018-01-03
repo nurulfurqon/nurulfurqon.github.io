@@ -1,0 +1,44 @@
+.button {
+    padding: 8px 18px;
+    border-radius: 2px;
+
+    &--outline {
+        border: 1px solid #ac3a3e;
+        -webkit-transition: color .3s ease-out, opacity .3s ease-out, background .3s ease-out;
+        -o-transition: color .3s ease-out, opacity .3s ease-out, background .3s ease-out;
+        transition: color .3s ease-out, opacity .3s ease-out, background .3s ease-out;
+    }
+
+    &--outline:hover {
+        background: #ac3a3e;
+        color: #fff;
+    }
+}
+
+.btn-printmarket {
+    color: #fff;
+    background-color: #ac3a3e;
+    border-color: #ac3a3e;
+}
+
+.btn-printmarket:hover {
+    background-color: #912e31;
+    border-color: #912e31;
+}
+
+.btn-sosmed {
+    border-color: #ddd;
+    background-color: #fafafa;
+    color: #333;
+}
+
+.img-btn-sosmed {
+    margin-top: -4px;
+    height: 16px;
+}
+
+.btn-pass {
+    top: 6px;
+    font-size: 14px !important;
+    position: relative;
+}

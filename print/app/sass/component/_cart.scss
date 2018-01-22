@@ -1,0 +1,213 @@
+.cart {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 60px;
+    clear: both;
+    position: relative;
+    overflow: hidden;
+}
+
+.cart__header-title {
+    width: 100%;
+    padding: 10px 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    h2 {
+        font-size: 25px;
+        font-weight: bold;
+        color: #353535;
+        margin: 0;
+        padding: 0;
+    }
+    span {
+        font-size: 14px;
+        color: #555555;
+        padding: 0;
+        margin: 0 0 0 15px;
+    }
+}
+
+.cart__content {
+    width: 100%;
+    border-radius: 4px;
+    padding: 40px 0 0;
+    background-color: #ffffff;
+    border: 1px solid #ebeaea;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+}
+
+.cart__content-box {
+    position: relative;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cart__content-box-two {
+    padding: 0 40px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    span {
+        color: #555555;
+        font-size: 13px;
+    }
+
+    .box-text {
+        width: 350px;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .text {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.cart__content-box-three {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .box-disc {
+        width: 350px;
+    }
+
+    span {
+        color: #353535;
+        font-size: 14px;
+    }
+
+    a {
+        padding: 10px 20px;
+        background-color: #f2dc57;
+        color: #353535;
+        border-radius: 25px;
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        opacity: 0.8;
+    }
+
+    .input-codes {
+        width: 130px;
+        margin: 0 10px;
+    }
+
+    .box-text {
+        width: 350px;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .text {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between
+        }
+
+        p {
+            margin: 0;
+            font-weight: bold;
+            font-size: 16px;
+            color: #353535;
+        }
+    }
+}
+
+.cart__content-column {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    h3 {
+        font-size: 16px;
+        color: #353535;
+        margin: 0;
+        padding: 0 !important;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 16px;
+        color: #353535;
+        margin: 5px 0 0;
+    }
+
+    .text-item {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .text-column {
+        max-width: 220px;
+    }
+
+    .footer-text {
+        display: flex;
+        flex-direction: row;
+        margin: 5px 0 0;
+
+        a {
+            font-size: 12px;
+            margin-right: 5px;
+        }
+    }
+}
+.price-column {
+    width: 120px;
+}
+.cart__content-column--img {
+    display: flex;
+    flex-direction: row;
+}
+
+.cart__content-footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.cart__footer {
+    width: 100%;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+    }
+}

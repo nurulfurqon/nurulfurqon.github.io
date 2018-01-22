@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Printmarket</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+        <!--build:css css/styles.min.css-->
+        <link href="css/styles.css" rel="stylesheet">
+        <!-- endbuild -->
+        <style>
+            .content-cart .dropdown-menu {
+                margin-top: 31px;
+                box-shadow: none;
+            }
+
+            .box-cart {
+                left: -175px !important;
+            }
+
+            .box-login {
+                top: 59px !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="small-header">
+                <div class="small-header__left">
+                    <h2>
+                        Senin - Jumat 08.00 - 18.00, &nbsp;&nbsp; Akhir pekan 13:00 - 18.00
+                    </h2>
+                </div>
+                <div class="small-header__right">
+                    <div class="box-contact">
+                        <img src="images/whatsapp-logo.svg" class="img-icon" alt="" srcset="">
+                        <p>+62 819 3227 1455</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="box-contact">
+                        <img src="images/line-logo.svg" class="img-icon" alt="" srcset="">
+                        <p>@PRINTMARKET</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="box-contact">
+                        <img src="images/envelope.svg" class="img-icon" alt="" srcset="">
+                        <p>hello@printmarket.co.id</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="header-box">
+                <div class="header_box-left">
+                    <a href="" id="logo">
+                        <img src="images/logo1.png" alt="" srcset="" width="150px">
+                    </a>
+                    <div class="dropdown_content">
+                        <div class="box-btn_menu">
+                            <div class="btn_menu">
+                                <p>Semua Produk &nbsp;<i class="icon ion-android-arrow-dropdown"></i></p>
+                            </div>
+                        </div>
+                        <div class="menu_dropdown">
+                            <div class="menu_dropdown__header-title">
+                                <h6>LAYANAN PERCETAKAN</h6>
+                            </div>
+                            <div class="box-content">
+                                <ul class="menu_dropdown__content" id="style-3">
+                                    <li class="box-menu"><a href="" data-thumbnail-src="images/service.jpg">Letterheads</a></li>
+                                    <li class="box-menu"><a href="">Calendars</a></li>
+                                    <li class="box-menu"><a href="">Letterheads</a></li>
+                                    <li class="box-menu"><a href="">Letterheads</a></li>
+                                    <li class="box-menu"><a href="">Calendars</a></li>
+                                    <li class="box-menu"><a href="">Letterheads</a></li>
+                                    <li class="box-menu">
+                                        <a class="toggle" href="javascript:void(0);">X-Stand &nbsp;<i class="icon ion-android-arrow-dropdown"></i></a>
+                                        <ul class="menu-child">
+                                            <li><a href="" data-thumbnail-src="images/gambar-motivasi.jpg">tes</a></li>
+                                            <li><a href="">coba</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="box-menu"><a href="">Letterheads</a></li>
+                                    <li class="box-menu"><a href="">Calendars</a></li>
+                                    <li class="box-menu"><a href="">Letterheads</a></li>
+                                    <li class="box-menu"><a href="">Letterheads</a></li>
+                                    <li class="box-menu"><a href="">Calendars</a></li>
+                                    <li class="box-menu"><a href="">Letterheads</a></li>
+                                    <li class="box-menu"><a href="">Letterheads</a></li>
+                                    <li class="box-menu"><a href="">Calendars</a></li>
+                                    <li class="box-menu"><a href="">Letterheads</a></li>
+                                    <li class="box-menu"><a href="">Letterheads</a></li>
+                                    <li class="box-menu"><a href="">Calendars</a></li>
+                                    <li class="box-menu"><a href="">Letterheads</a></li>
+                                </ul>
+                                <div class="menu_dropdown__image">
+                                    <img src="images/gambar-motivasi.jpg" id="img-product" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_box-right">
+                    <div class="dropdown">
+                        <div class="content-cart">
+                        <a href="" class="" data-toggle="dropdown">
+                            <i class="icon ion-android-cart icn-cart"></i>
+                            <div class="count-cart">10</div>
+                        </a>
+                            <!-- Form Login -->
+                            <div class="dropdown-menu box-cart">
+                                <div class="box-cart__title">
+                                    <i class="icon ion-android-cart icn-cart"></i>
+                                    <div class="count-cart-title">10</div>
+                                </div>
+                                <hr/>
+                                <div class="box-cart__content">
+                                    <div class="img-cart"></div>
+                                    <div class="cart-detail">
+                                        <h6>Lorem Ipsum dolor sit amet</h6>
+                                        <h6>Rp.130.000</h6>
+                                        <h6>Jumlah : 1</h6>
+                                    </div>
+                                </div>
+                                <hr/>
+                                <div class="box-cart__count">
+                                    <h6><b>Total :</b></h6>
+                                    <h6>Rp.130.000</h6>
+                                </div>
+                                <div class="box-cart__button">
+                                    <button type="submit" class="btn btn-block btn-printmarket">Konfirmasi</button>
+                                </div>
+                            </div>
+                            <!-- End Form Login -->
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="box-login">
+                        <a href="" class="" data-toggle="dropdown"><h6>Masuk</h6></a>
+                            <!-- Form Login -->
+                            <div class="dropdown-menu box-login">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="" id="exampleCheck1">
+                                        <span class="text-muted">Ingat saya</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-block btn-printmarket">Masuk</button>
+                                    <a href="" class="btn-pass">Lupa Password?</a>
+                                    <hr/>
+                                    <button type="submit" class="btn btn-block btn-sosmed"><img src="images/facebook.svg" class="img-btn-sosmed" alt="" srcset="">&nbsp;&nbsp; Masuk dengan Facebook</button>
+                                </form>
+                            </div>
+                            <!-- End Form Login -->
+                        </div>
+                    </div>
+                    <a href="" class="button button--outline-white"><h6>Daftar</h6></a>
+                </div>
+            </div>       
+        </div>
+        <!-- sticky -->
+        <div class="box-shadow"></div>
+        <div class="checkout">
+
+            <div class="container">
+                <div class="row">
+                    <div class="checkout__header-title">
+                        <h2>Checkout</h2>
+                    </div>
+                    <div class="box-checkout-content">
+                        <div class="checkout__content">
+                            <section>
+                                <div class="wizard">
+                                    <div class="wizard-inner">
+                                        <div class="connecting-line"></div>
+                                        <ul class="nav nav-tabs" role="tablist">
+                        
+                                            <li role="presentation" class="active">
+                                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Delivery Address">
+                                                    <span class="round-tab">
+                                                        <i class="glyphicon glyphicon-list-alt"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                        
+                                            <li role="presentation" class="disabled">
+                                                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Payment Method">
+                                                    <span class="round-tab">
+                                                        <i class="glyphicon glyphicon-usd"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+    
+                                            <li role="presentation" class="disabled">
+                                                <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                                                    <span class="round-tab">
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                        
+                                    <form role="form">
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" role="tabpanel" id="step1">
+                                                <div class="box-content-tab">
+                                                    
+                                                    <div class="category-input">
+                                                        <label>
+                                                            <input type="radio" id="bill_individual" checked name="bill_type"> <img src="images/avatar.svg" alt="" class="icon-img" srcset=""> Individual
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" id="bill_company" name="bill_type"> <img src="images/briefcase.svg" alt="" class="icon-img" srcset=""> Company
+                                                        </label>
+                                                    </div>
+                                                    <hr>
+                                                    <form>
+                                                        <div class="box-form-delivery-address">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-group">
+                                                                        <label for="exampleInputEmail1">Full Name <red>*</red></label>
+                                                                        
+                                                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name" >
+                                                                            <input type="text" class="form-control" id="exampleInputPassword1" style="margin-top: 10px;" placeholder="Last Name">
+                                                                        
+    
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label>Telephone <red>*</red></label>
+                                                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Telephone">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label>City <red>*</red></label>
+                                                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="City">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label>Province <red>*</red></label>
+                                                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Province">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label>District <red>*</red></label>
+                                                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="District">
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-group">
+                                                                        <label for="exampleInputFile">Address <red>*</red></label>
+                                                                        <textarea name="" class="form-control" id="" cols="30" rows="7"></textarea>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label>Postal Code <red>*</red></label>
+                                                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Postal Code">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label>Delivery <red>*</red></label>
+                                                                        <select class="form-control" name="" id="">
+                                                                            <option value="">- Select Courier -</option>
+                                                                            <option value="">J&T</option>
+                                                                        </select>
+                                                                        
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="form-group">
+                                                                        <span>(<red><b>*</b></red>) tanda wajib untuk di isi.</span>
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="form-group">
+                                                                        <ul class="list-inline pull-right">
+                                                                            <li><button type="button" class="btn btn-printmarket next-step">Save and continue</button></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+    
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="tab-pane" role="tabpanel" id="step2">
+                                                <div class="box-content-tab">
+                                                
+                                                    <div class="category-input">
+                                                        <label>
+                                                            <input type="radio" id="payment_credit" checked name="payment_type"> <img src="images/credit-card_2.svg" alt="" class="icon-img" srcset=""> Credit Card
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" id="payment_bank" name="payment_type"> <img src="images/museum.svg" alt="" class="icon-img" srcset=""> Bank Transfer
+                                                        </label>
+                                                    </div>
+                                                    <hr>
+                                                    <form>
+                                                        <div class="box-form-delivery-address">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-group">
+                                                                        <label for="exampleInputEmail1">We Accept <red>*</red></label>
+                                                                        
+                                                                        <div class="category-credit">
+                                                                            <label>
+                                                                                <input type="radio" id="credit-card" checked name="type-credit"> <img src="images/visa.svg" alt="" class="icon-img" srcset="">
+                                                                            </label>
+                                                                            <label>
+                                                                                <input type="radio" id="credit-card" name="type-credit"> <img src="images/mastercard.svg" alt="" class="icon-img" srcset="">
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label>Card Number <red>*</red></label>
+                                                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="0000 0000 0000 0000">
+                                                                    </div>
+                                                                    
+                                                                    
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-group">
+                                                                        <label>Expiration Date <red>*</red></label>
+                                                                        <div class="form-inline">
+                                                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="MM" style="width: 50px;">
+                                                                            &nbsp; / &nbsp;
+                                                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="YY" style="width: 50px;">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label>CVV <red>*</red></label>
+                                                                        <div class="form-inline">
+                                                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="" style="width: 70px;"> &nbsp; <a href="http://"> What is this?</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="form-group">
+                                                                        <span>(<red><b>*</b></red>) tanda wajib untuk di isi.</span>
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="form-group">
+                                                                        <ul class="list-inline pull-right">
+                                                                            <li>
+                                                                                <button type="button" class="btn btn-default prev-step">Previous</button>
+                                                                            </li>
+                                                                            <li>
+                                                                                <button type="button" class="btn btn-printmarket next-step">Save and continue</button>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+    
+                                                        </div>
+                                                    </form>
+                                                </div>
+    
+                                            </div>
+                                            <div class="tab-pane" role="tabpanel" id="complete">
+                                                <h3>Complete</h3>
+                                                <p>You have successfully completed all steps.</p>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </section>
+                        </div>
+    
+                        <div class="checkout__price">
+                            <div class="box-cart__title">
+                                <h3><b>Total Price</b></h3>
+                            </div>
+                            <hr/>
+                            <div class="box-cart__content">
+                                <div class="img-cart"></div>
+                                <div class="cart-detail">
+                                    <h6><b>Calender</b></h6>
+                                    <h6>Rp.130.000</h6>
+                                    <h6>Jumlah : 1</h6>
+                                </div>
+                            </div>
+                            <div class="box-cart__content">
+                                <div class="img-cart"></div>
+                                <div class="cart-detail">
+                                    <h6><b>Calender</b></h6>
+                                    <h6>Rp.130.000</h6>
+                                    <h6>Jumlah : 1</h6>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="box-cart__count">
+                                <h6><b>Total :</b></h6>
+                                <h6>Rp.130.000</h6>
+                            </div>
+                            <div class="box-cart__button">
+                                <button type="submit" class="btn btn-block btn-printmarket">Lorem Ipsum</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__box-one">
+                    <h3>Printmarket</h3>
+                    <p>
+                        Printmarket memberikan kemudahan untuk mencetak digital printing maupun offset printing,
+                        dengan layanan terbaik dan harga terjangkau. Printmarket satu-satunya online printing di
+                        Indonesia yang menawarkan transparansi harga. <br><br>
+                        Dengan Printmarket, memesan kartu nama (business cards), brosur, flyer, leaflets, sticker,
+                        banner, hingga kemasaan (packaging) menjadi lebih mudah dan terjangkau. Printmarket akan
+                        mengantarkan pengiriman barang hingga ke tujuan dan tepat waktu. <br><br>
+                        Tim kami akan melayani pertanyaan anda mengenai kebutuhan anda, untuk memastikan
+                        pengalaman terbaik memesan melalui Printmarket dan anda mendapatkan hasil sesuai
+                        kebutuhan anda. Apabila anda membutuhkan bantuan untuk mencetak sesuai kebutuhan, kami
+                        akan berusaha untuk memberikan penawaran terbaik.
+                    </p>
+                </div>
+                <hr>
+                <div class="footer__box-two">
+                    <div class="box-content">
+                        <img src="images/online-shop.svg" class="img-content" alt="" srcset="">
+                        <div class="txt-content">
+                            <h3>Harga Teransparan</h3>
+                            <p>
+                                Dapatkan penawaran harga terbaik sesuai
+                                dengan jumlah kebutuhan yang anda perlukan kurang dari 1 menit
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <img src="images/deal.svg" class="img-content" alt="" srcset="">
+                        <div class="txt-content">
+                            <h3>Jaminan Kepuasan</h3>
+                            <p>
+                                Kami menjamin kepuasan pengalaman
+                                mencetak anda di Printmarket.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <img src="images/support.svg" class="img-content" alt="" srcset="">
+                        <div class="txt-content">
+                            <h3>Ahli Percetakan</h3>
+                            <p>
+                                Punya pertanyaan? Biarkan tim sukses kami
+                                membantu anda untuk mendapatkan hasil yang anda inginkan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="footer__box-tree">
+                    <div class="box-menu">
+                        <h3>Printmarket</h3>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                    </div>
+                    <div class="box-menu">
+                        <h3>Printmarket</h3>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                    </div>
+                    <div class="box-menu">
+                        <h3>Printmarket</h3>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                    </div>
+                    <div class="box-menu">
+                        <h3>Printmarket</h3>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                        <p>lorem ipsum</p>
+                    </div>
+                    <div class="box-soc">
+                        <h3>
+                            Metode Pembayaran
+                        </h3>
+                        <div class="box-bank">
+                            <img class="img-bank" src="images/Logo_BNI.png" alt="" srcset="">
+                            <img class="img-bank" src="images/Logo_BCA.png" alt="" srcset="">
+                        </div>
+                        <h4>
+                            Ikuti Kami
+                        </h4>
+                        <div class="box-soc">
+                            <img src="images/facebook.svg" class="img-soc" alt="" srcset="">
+                            <img src="images/instagram.svg" class="img-soc" alt="" srcset="">
+                            <img src="images/pinterest.svg" class="img-soc" alt="" srcset="">
+                            <img src="images/google-plus.svg" class="img-soc" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="box-copy">
+                         <img src="images/logo.png" alt="" srcset="" width="150px"> <p>&copy; 2018, PT Printmarket </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+        <script>
+            $('.dropdown_content').css('display','block');
+            $(document).ready(function () {
+                //Initialize tooltips
+                $('.nav-tabs > li a[title]').tooltip();
+                
+                //Wizard
+                $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+                    var $target = $(e.target);
+                
+                    if ($target.parent().hasClass('disabled')) {
+                        return false;
+                    }
+                });
+
+                $(".next-step").click(function (e) {
+
+                    var $active = $('.wizard .nav-tabs li.active');
+                    $active.next().removeClass('disabled');
+                    nextTab($active);
+
+                });
+                $(".prev-step").click(function (e) {
+
+                    var $active = $('.wizard .nav-tabs li.active');
+                    prevTab($active);
+
+                });
+            });
+
+            function nextTab(elem) {
+                $(elem).next().find('a[data-toggle="tab"]').click();
+            }
+            function prevTab(elem) {
+                $(elem).prev().find('a[data-toggle="tab"]').click();
+            }
+        </script>
+        <!--build:js js/main.min.js -->
+        <script src="js/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

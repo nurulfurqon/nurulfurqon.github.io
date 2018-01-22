@@ -1,0 +1,34 @@
+{
+  "name": "gulp-build",
+  "version": "1.0.0",
+  "description": "gulp to build front-end web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurulfurqon/gulp-build.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "Nurul Furqon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nurulfurqon/gulp-build/issues"
+  },
+  "homepage": "https://github.com/nurulfurqon/gulp-build#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^2.1.0"
+  }
+}

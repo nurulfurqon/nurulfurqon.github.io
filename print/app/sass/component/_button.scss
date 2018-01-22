@@ -7,16 +7,30 @@
         -webkit-transition: color .3s ease-out, opacity .3s ease-out, background .3s ease-out;
         -o-transition: color .3s ease-out, opacity .3s ease-out, background .3s ease-out;
         transition: color .3s ease-out, opacity .3s ease-out, background .3s ease-out;
+        z-index: 101;
     }
 
     &--outline:hover {
         background: #ac3a3e;
         color: #fff;
     }
+
+    &--outline-white {
+        border: 1px solid #f5f5f5;
+        -webkit-transition: color .3s ease-out, opacity .3s ease-out, background .3s ease-out;
+        -o-transition: color .3s ease-out, opacity .3s ease-out, background .3s ease-out;
+        transition: color .3s ease-out, opacity .3s ease-out, background .3s ease-out;
+        z-index: 101;
+    }
+
+    &--outline-white:hover {
+        background: #f5f5f5;
+        color: #d64545;
+    }
 }
 
 .btn-printmarket {
-    color: #fff;
+    color: #fff !important;
     background-color: #ac3a3e;
     border-color: #ac3a3e;
 }
@@ -24,6 +38,14 @@
 .btn-printmarket:hover {
     background-color: #912e31;
     border-color: #912e31;
+}
+
+.btn-text {
+    color: #555555 !important;
+}
+
+.btn-text:hover {
+    color: #ac3a3e !important;
 }
 
 .btn-sosmed {

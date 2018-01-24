@@ -195,7 +195,7 @@
                                     <div class="col-xl-6">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1"><h3>Format</h3></label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
+                                            <select class="form-control" id="selectFormat">
                                                 <option>9 x 5.4 cm</option>
                                                 <option>Vertical</option>
                                             </select>
@@ -205,23 +205,37 @@
                                     <div class="col-xl-6">
                                         <div class="form-group">
                                             <div class="horizontal">
-                                               
+                                                <button type="button" id="setCustom" class="btn btn-primary">Custom Ukuran</button>
+                                               <div id="custom-input">
+                                                   <div class="form-group">
+                                                        <input id="customWidth" value="" name="widthC" type="number" class="form-control" style="width: 110px;">
+                                                        <small class="form-text text-muted">Between 5cm & 15cm</small>
+                                                   </div>
+                                                   <p>X</p>
+                                                   <div class="form-group">
+                                                        <input id="customHeight" value="" type="number" class="form-control" style="width: 110px;">
+                                                        <small class="form-text text-muted">Between 5cm & 15cm</small>
+                                                   </div>
+                                                   <button type="button" id="addCustom" class="btn btn-primary"><i class="icon ion-checkmark-round icon-text"></i></button>
+                                               </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xl-12">
-                                         <label for="exampleInputEmail1"><h3>Print Both Sides</h3></label>
+                                         <label for="exampleInputEmail1"><h3>Sisi Print</h3></label>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="form-check">
                                             <input type="radio" class="" type="radio" name="exampleRadios" id="exampleRadios2">
-                                            <label class="form-check-label" for="exampleCheck1">Full color on Front & Back</label>
+                                            <img src="images/poster.svg" style="height: 30px; margin-left: 5px;" alt="" srcset="">
+                                            <label for="exampleCheck1"> <b>Full color on Front & Back</b></label>
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="form-check">
                                             <input type="radio" class="" type="radio" name="exampleRadios" id="exampleRadios1">
-                                            <label class="form-check-label" for="exampleCheck1">Full color on Front Only</label>
+                                            <img src="images/poster.svg" style="height: 30px; margin-left: 5px;" alt="" srcset="">
+                                            <label for="exampleCheck1"><b>Full color on Front Only</b></label>
                                         </div>
                                     </div>
                                     <br>
@@ -266,8 +280,7 @@
                             <div class="header-title">
                                 <img src="images/document.svg" alt="" class="icon-img" srcset="">
                                 <div class="text-content">
-                                    <h3>You selected:</h3>
-                                    <h4>Upload Design</h4>
+                                    <h3>Ringkasan <br> Produk</h3>
                                 </div>
                             </div>
                             <hr>
@@ -302,14 +315,14 @@
                                 <img src="images/checklist.svg" class="icon" alt="" srcset="">
                                 <div class="text">
                                     <p>How to order</p>
-                                    <span>more information</span>
+                                    <span><a href="">more information</a></span>
                                 </div>
                             </div>
                             <div class="box-content">
                                 <img src="images/chat.svg" class="icon" alt="" srcset="">
                                 <div class="text">
                                     <p>Need help</p>
-                                    <span>Closing your artwork</span>
+                                    <span><a href="">Download Template</a></span>
                                 </div>
                             </div>
                         </div>
@@ -320,17 +333,19 @@
                     <div class="row">
                         <div class="delivery-product">
                             <div class="header-title">
-                                <h2>2. Delivery </h2>
+                                <h2>2. Pilih Jumlah dan Tanggal Penerimaan</h2>
                             </div>
                             <hr>
                             <div class="content">
                                 <div class="content__title">
-                                    <img src="images/placeholder.svg" class="img-icon" alt="" srcset="">
-                                    <div class="text">
-                                        <h3>Lokasi</h3>
-                                        <h2>Kota Jakarta</h2>
+                                    <div id="custom-jumlah">
+                                        <input id="customJumlah" value="" type="number" class="form-control" style="width: 110px;">
+                                        <p><b>pcs</b></p>
+                                        <button type="button" id="addJumlah" class="btn btn-primary"><i class="icon ion-checkmark-round icon-text"></i></button>
                                     </div>
+                                    <button type="button" id="setJumlah" class="btn btn-primary">Custom Jumlah</button>
                                 </div>
+                                <small class="form-text text-muted">100 pcs - 50,000 pcs</small>
                                 <div class="content__table">
                                     <table class="table table-bordered">
                                         <thead>
@@ -368,12 +383,6 @@
                                                     <div class="table-head">
                                                         <p>Reception Date</p>
                                                         <h3>18 Jan <span>/ Jumat</span></h3>
-                                                    </div>
-                                                </th>
-                                                <th class="red">
-                                                    <div class="table-head">
-                                                        <p>Reception Date</p>
-                                                        <h3>19 Jan <span>/ Sabtu</span></h3>
                                                     </div>
                                                 </th>
                                             </tr>
@@ -440,17 +449,7 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
-                                                </div>
-                                            </td>
+                                           
                                             </tr>
                                             <tr>
                                             <th class="no-padding">
@@ -513,17 +512,7 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
-                                                </div>
-                                            </td>
+                                            
                                             </tr>
                                             <tr>
                                             <th class="no-padding">
@@ -586,17 +575,7 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
-                                                </div>
-                                            </td>
+                                        
                                             </tr>
                                             <tr>
                                             <th class="no-padding">
@@ -659,17 +638,7 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
-                                                </div>
-                                            </td>
+                                            
                                             </tr>
                                         </tbody>
                                     </table>
@@ -891,15 +860,15 @@
         <!--build:js js/main.min.js -->
         <script>
             $('.dropdown_content').css('display','block');
+
             $(document).ready(function(){
+                
                 $('input').iCheck({
                     checkboxClass: 'icheckbox_square-orange',
                     radioClass: 'iradio_square-orange',
                     increaseArea: '20%' // optional
                 });
-            });
-            $(document).ready(function(){
-	
+
                 $('ul.tabs li').click(function(){
                     var tab_id = $(this).attr('data-tab');
 
@@ -908,9 +877,60 @@
 
                     $(this).addClass('current');
                     $("#"+tab_id).addClass('current');
-                })
+                });
 
+                $('#setCustom').click(function() {
+                    $('#setCustom').hide();
+                    $('#custom-input').show();
+                    $('#custom-input').css('display','flex');
+                });
+
+                // action button add custom width & height
+                $('#addCustom').attr('disabled', true);
+                $('#customWidth,#customHeight').change(function(){
+                    var valWidth = $('#customWidth').val();
+                    var valHeight = $('#customHeight').val();
+
+                    if (valWidth < 5 || valHeight < 10) {
+                        $('#addCustom').attr('disabled', true);
+                    } else {
+                        $('#addCustom').removeAttr('disabled', false);
+                    }
+                });
+
+                $('#addCustom').click(function(){
+                    var widthC = $('#customWidth').val();
+                    var heightC = $('#customHeight').val();
+                    $('#selectFormat').append('<option value="" selected="selected">'+widthC+' x '+heightC+' cm</option>');
+                    $('#setCustom').show();
+                    $('#custom-input').hide();
+                });
+
+                //
+                $('#setJumlah').click(function() {
+                    $('#setJumlah').hide();
+                    $('#custom-jumlah').show();
+                    $('#custom-jumlah').css('display','flex');
+                });
+
+                // action button add custom width & height
+                $('#addJumlah').attr('disabled', true);
+                $('#customJumlah').change(function(){
+                    var valWidth = $('#customJumlah').val();
+
+                    if (valWidth < 50) {
+                        $('#addJumlah').attr('disabled', true);
+                    } else {
+                        $('#addJumlah').removeAttr('disabled', false);
+                    }
+                });
+
+                $('#addJumlah').click(function(){
+                    $('#setJumlah').show();
+                    $('#custom-jumlah').hide();
+                });
             })
+
         </script>
         <script src="js/main.js"></script>
         <!-- endbuild -->

@@ -28,7 +28,7 @@ $(window).scroll(function(event){
    }
 });
 
-// acordion
+/* acordion
 $('.toggle').click(function(e) {
     e.preventDefault();
 
@@ -43,7 +43,7 @@ $('.toggle').click(function(e) {
       $this.next().toggleClass('show');
       $this.next().slideToggle(350);
   }
-});
+}); */
 // hover image
 $(function () {
     var $preview = $("#img-product");

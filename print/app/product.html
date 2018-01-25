@@ -193,7 +193,7 @@
                                 
                                 <div class="row">
                                     <div class="col-xl-6">
-                                        <div class="form-group">
+                                        <div class="form-group was-validated">
                                             <label for="exampleInputEmail1"><h3>Format</h3></label>
                                             <select class="form-control" id="selectFormat">
                                                 <option>9 x 5.4 cm</option>
@@ -347,6 +347,7 @@
                                 </div>
                                 <small class="form-text text-muted">100 pcs - 50,000 pcs</small>
                                 <div class="content__table">
+                                    <!-- Button trigger modal -->
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>
@@ -395,7 +396,7 @@
                                                 </div>
                                             </th>
                                             <td class="no-padding">
-                                                <div class="button-price">
+                                                <div class="button-price" data-toggle="modal" data-target="#uploadArtwork">
                                                     <div class="box-check">
                                                         <i class="icon ion-checkmark-round icon-text"></i>
                                                     </div>
@@ -834,8 +835,9 @@
                             Metode Pembayaran
                         </h3>
                         <div class="box-bank">
-                            <img class="img-bank" src="images/Logo_BNI.png" alt="" srcset="">
-                            <img class="img-bank" src="images/Logo_BCA.png" alt="" srcset="">
+                            <img class="img-bank" src="images/bank-transfer.svg" alt="" srcset="">
+                            <img class="img-bank" src="images/visa.svg" alt="" srcset="">
+                            <img class="img-bank" src="images/mastercard.svg" alt="" srcset="">
                         </div>
                         <h4>
                             Ikuti Kami
@@ -853,6 +855,121 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="uploadArtwork" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h2>3. Upload File Cetak</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-container">
+                    <div class="box-contentLeft">
+                        <h3>Additional Options</h3>
+                        <br>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1"><h3>File Format</h3></label>
+                                <select class="form-control">
+                                    <option>Print Ready PDF File - <em>Free</em></option>
+                                </select>
+                                <small id="emailHelp" class="form-text text-muted">lorem ipsum dolor sit amet.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1"><h3>File Check</h3></label>
+                                <select class="form-control">
+                                    <option>Standard Check - <b>Free</b></option>
+                                </select>
+                                <small id="emailHelp" class="form-text text-muted">lorem ipsum dolor sit amet.</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1"><h3>Upload File</h3></label>
+                                <div class="box-fileUpload">
+                                    <div class="fileContainer">
+                                        Upload PDF
+                                        <input type="file" id="fileUpload"/>
+                                    </div>
+                                    <p id="nameFile">
+                                        
+                                    </p>
+                                </div>
+                                
+                                <small id="emailHelp" class="form-text text-muted">Maximum 5mb.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1"><h3>Link File</h3></label>
+                                <input id="customHeight" value="" type="text" class="form-control" placeholder="https://example.com">
+                                <small class="form-text text-muted">Silahkan masukan link gdrive, dropbox, onedrive, dll (apabila dibutuhkan file lebih besar)</small>
+                           </div>
+                        </form>
+                    </div>
+                    <div class="box-contentRight">
+                        <h3>Your Order Summary</h3>
+                        <div class="box-card">
+                            <div class="text">
+                                <span>Product</span>
+                                <p>Business Cards</p>
+                            </div>
+                            <div class="text">
+                                <span>Format</span>
+                                <p>9 x 5.4 cm</p>
+                            </div>
+                            <div class="text">
+                                <span>Pages</span>
+                                <p>Front Only</p>
+                            </div>
+                            <div class="text">
+                                <span>Colors</span>
+                                <p>Full Color on Front Only</p>
+                            </div>
+                            <div class="text">
+                                <span>Paper</span>
+                                <p>310g Art Card</p>
+                            </div>
+                            <div class="text">
+                                <span>Finishing</span>
+                                <p>None</p>
+                            </div>
+                            <hr>
+                            <div class="text">
+                                <span>Quantity</span>
+                                <p>100 pieces</p>
+                            </div>
+                            <div class="text">
+                                <span>Expected Delivery</span>
+                                <p>30 Jan 2018</p>
+                            </div>
+                            <hr>
+                            <div class="text">
+                                <span>Subtotal</span>
+                                <p>Rp.130.000</p>
+                            </div>
+                            <div class="text">
+                                <span>0%</span>
+                                <p>Rp.0</p>
+                            </div>
+                            <hr>
+                            <div class="text">
+                                <span>Total</span>
+                                <p class="big">Rp.130.000</p>
+                            </div>
+                        </div>
+                        <div class="box-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                            <button type="button" class="btn btn-primary">Simpan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
@@ -928,6 +1045,11 @@
                 $('#addJumlah').click(function(){
                     $('#setJumlah').show();
                     $('#custom-jumlah').hide();
+                });
+
+                $('#fileUpload').change(function() {
+                    var file = $('#fileUpload')[0].files[0].name;
+                    $('#nameFile').text(file);
                 });
             })
 

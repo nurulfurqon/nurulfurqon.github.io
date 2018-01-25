@@ -406,9 +406,11 @@ h6 {
         font-weight: bold; }
       .footer__box-tree .box-soc .box-bank {
         align-items: center;
-        margin-bottom: 15px; }
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px; }
       .footer__box-tree .box-soc .img-bank {
-        max-height: 30px;
+        max-height: 50px;
         margin: 15px 10px; }
       .footer__box-tree .box-soc h4 {
         color: #353535;
@@ -778,6 +780,98 @@ h6 {
     padding: 15px; }
   .info-product .tab-content.current {
     display: inherit; }
+
+#uploadArtwork {
+  /* Example stylistic flourishes */ }
+  #uploadArtwork h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #353535;
+    margin: 0; }
+  #uploadArtwork h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #353535;
+    margin: 0; }
+  #uploadArtwork .modal-dialog {
+    max-width: 700px !important; }
+  #uploadArtwork .modal-container {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  #uploadArtwork .box-contentLeft {
+    width: 300px; }
+  #uploadArtwork .box-contentRight {
+    width: 280px; }
+  #uploadArtwork .fileContainer {
+    overflow: hidden;
+    position: relative; }
+  #uploadArtwork .fileContainer [type=file] {
+    cursor: inherit;
+    display: block;
+    font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0; }
+  #uploadArtwork .box-fileUpload {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    #uploadArtwork .box-fileUpload p {
+      margin: 0 0 0 10px;
+      padding: 0;
+      font-size: 13px;
+      line-height: 13px; }
+  #uploadArtwork .fileContainer {
+    background: #d64545;
+    color: #ffffff;
+    text-align: center;
+    width: 150px;
+    border-radius: 15px;
+    padding: 5px;
+    overflow: hidden; }
+  #uploadArtwork .fileContainer [type=file] {
+    cursor: pointer; }
+  #uploadArtwork .box-card {
+    width: 100%;
+    background-color: #ffffff;
+    margin: 20px 0 0 0; }
+    #uploadArtwork .box-card hr {
+      margin: 5px 0; }
+    #uploadArtwork .box-card .text {
+      padding: 3px 5px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between; }
+      #uploadArtwork .box-card .text span {
+        font-size: 13px;
+        color: #555555;
+        margin: 0; }
+      #uploadArtwork .box-card .text p {
+        font-size: 13px;
+        text-align: right;
+        font-weight: bold;
+        color: #353535;
+        margin: 0; }
+      #uploadArtwork .box-card .text .big {
+        font-size: 18px;
+        color: #d64545; }
+  #uploadArtwork .box-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 30px 0 0 0; }
+    #uploadArtwork .box-footer button {
+      margin: 0 0 0 10px; }
 
 .cart {
   width: 100%;

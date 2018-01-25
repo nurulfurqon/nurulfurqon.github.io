@@ -526,11 +526,13 @@ h6 {
 
             .box-bank {
                 align-items: center;
-                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 5px;
             }
 
             .img-bank {
-                max-height: 30px;
+                max-height: 50px;
                 margin: 15px 10px;
             }
 

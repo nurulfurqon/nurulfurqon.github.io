@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/orange.css">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/orange.css">-->
         <!--build:css css/styles.min.css-->
         <link href="css/styles.css" rel="stylesheet">
         <!-- endbuild -->
@@ -226,14 +226,14 @@
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="form-check">
-                                            <input type="radio" class="" type="radio" name="exampleRadios" id="exampleRadios2">
+                                            <input onclick="sisiPrint('tamvan')" type="radio" class="sisiPrint" type="radio" name="exampleRadios" id="sisiPrint1" value="">
                                             <img src="images/poster.svg" style="height: 30px; margin-left: 5px;" alt="" srcset="">
                                             <label for="exampleCheck1"> <b>Full color on Front & Back</b></label>
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="form-check">
-                                            <input type="radio" class="" type="radio" name="exampleRadios" id="exampleRadios1">
+                                            <input onclick="sisiPrint('Berani')" type="radio" class="sisiPrint" type="radio" name="exampleRadios" id="sisiPrint2" value="">
                                             <img src="images/poster.svg" style="height: 30px; margin-left: 5px;" alt="" srcset="">
                                             <label for="exampleCheck1"><b>Full color on Front Only</b></label>
                                         </div>
@@ -973,18 +973,23 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>-->
         <!--build:js js/main.min.js -->
         <script>
             $('.dropdown_content').css('display','block');
 
+            // untuk aksi sisi print
+            function sisiPrint(value) {
+                alert('abraham '+value);
+            }
+
             $(document).ready(function(){
                 
-                $('input').iCheck({
+                /*$('.sisiPrint').iCheck({
                     checkboxClass: 'icheckbox_square-orange',
                     radioClass: 'iradio_square-orange',
                     increaseArea: '20%' // optional
-                });
+                })*/
 
                 $('ul.tabs li').click(function(){
                     var tab_id = $(this).attr('data-tab');
@@ -1001,6 +1006,8 @@
                     $('#custom-input').show();
                     $('#custom-input').css('display','flex');
                 });
+
+                
 
                 // action button add custom width & height
                 $('#addCustom').attr('disabled', true);
@@ -1052,6 +1059,8 @@
                     $('#nameFile').text(file);
                 });
             })
+
+            
 
         </script>
         <script src="js/main.js"></script>

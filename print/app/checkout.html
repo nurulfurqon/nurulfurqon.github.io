@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/orange.css">
         <!--build:css css/styles.min.css-->
         <link href="css/styles.css" rel="stylesheet">
         <!-- endbuild -->
@@ -180,7 +181,7 @@
                                         <ul class="nav nav-tabs" role="tablist">
                         
                                             <li role="presentation" class="active">
-                                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Delivery Address">
+                                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="">
                                                     <span class="round-tab">
                                                         <i class="glyphicon glyphicon-list-alt"></i>
                                                     </span>
@@ -210,146 +211,125 @@
                                             <div class="tab-pane active" role="tabpanel" id="step1">
                                                 <div class="box-content-tab">
                                                     
-                                                    <div class="category-input">
-                                                        <label>
-                                                            <input type="radio" id="bill_individual" checked name="bill_type"> <img src="images/avatar.svg" alt="" class="icon-img" srcset=""> Individual
-                                                        </label>
-                                                        <label>
-                                                            <input type="radio" id="bill_company" name="bill_type"> <img src="images/briefcase.svg" alt="" class="icon-img" srcset=""> Company
-                                                        </label>
-                                                    </div>
                                                     <hr>
-                                                    <form>
-                                                        <div class="box-form-delivery-address">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group has-error">
-                                                                        <label for="exampleInputEmail1">Full Name <red>*</red></label>
-                                                                        
-                                                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name" >
-                                                                            <input type="text" class="form-control" id="exampleInputPassword1" style="margin-top: 10px;" placeholder="Last Name">
-                                                                        
-    
+                                                    <div class="box-address">
+
+                                                        <!-- box jika addres sudah di isi -->
+                                                        <form action="">
+                                                            <div class="box-my-address">
+                                                                <div class="my-address-header">
+                                                                    <div class="form-check">
+                                                                        <input type="radio" class="" type="radio" name="exampleRadios" id="" value="">
+                                                                        <label for="exampleCheck1"> <b>Data Pengiriman</b></label>
                                                                     </div>
-                                                                    <div class="form-group">
-                                                                        <label>Telephone <red>*</red></label>
-                                                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Telephone">
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label>City <red>*</red></label>
-                                                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="City">
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label>Province <red>*</red></label>
-                                                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Province">
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label>District <red>*</red></label>
-                                                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="District">
-                                                                    </div>
-                                                                    
                                                                 </div>
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group">
-                                                                        <label for="exampleInputFile">Address <red>*</red></label>
-                                                                        <textarea name="" class="form-control" id="" cols="30" rows="7"></textarea>
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label>Postal Code <red>*</red></label>
-                                                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Postal Code">
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label>Delivery <red>*</red></label>
-                                                                        <select class="form-control" name="" id="">
-                                                                            <option value="">- Select Courier -</option>
-                                                                            <option value="">J&T</option>
-                                                                        </select>
-                                                                        
-                                                                    </div>
-                                                                    <br>
-                                                                    <div class="form-group">
-                                                                        <span>(<red><b>*</b></red>) tanda wajib untuk di isi.</span>
-                                                                    </div>
-                                                                    <br>
-                                                                    <div class="form-group">
-                                                                        <ul class="list-inline pull-right">
-                                                                            <li><button type="button" class="btn btn-printmarket next-step">Save and continue</button></li>
-                                                                        </ul>
-                                                                    </div>
+                                                                <div class="my-address-content">
+                                                                    <p>&#9679; abraham setyan nugraha</p>
+                                                                    <p>&#9679; email@email.com</p>
+                                                                    <p>&#9679; jl psum dolor sit, amet consectetur elit Reiciendis</p>
+                                                                    <p>&#9679; 08988989898</p>
+                                                                </div>
+                                                                <div class="my-address-footer">
+                                                                    <a href="">Edit Data</a>
                                                                 </div>
                                                             </div>
-    
+
+                                                        </form>
+                                                        <!-- end -->
+
+                                                        <div class="box-new-address" id="btn-new-address">
+                                                            <h3><i class="glyphicon glyphicon-plus"></i></h3>
+                                                            <h3>NEW</h3>
+                                                            <h3>ADDRESS</h3>
                                                         </div>
-                                                    </form>
+                                                    </div>
+                                                    <hr>
+                                                  
+                                                    <br>
+                                                    <ul class="list-inline pull-right">
+                                                        <li><button type="button" class="btn btn-printmarket next-step">Simpan & Lanjut</button></li>
+                                                    </ul>
                                                 </div>
                                                 
                                             </div>
                                             <div class="tab-pane" role="tabpanel" id="step2">
                                                 <div class="box-content-tab">
                                                 
-                                                    <div class="category-input">
-                                                        <label>
-                                                            <input type="radio" id="payment_credit" checked name="payment_type"> <img src="images/credit-card_2.svg" alt="" class="icon-img" srcset=""> Credit Card
-                                                        </label>
-                                                        <label>
-                                                            <input type="radio" id="payment_bank" name="payment_type"> <img src="images/museum.svg" alt="" class="icon-img" srcset=""> Bank Transfer
-                                                        </label>
-                                                    </div>
                                                     <hr>
                                                     <form>
                                                         <div class="box-form-delivery-address">
                                                             <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group">
-                                                                        <label for="exampleInputEmail1">We Accept <red>*</red></label>
-                                                                        
-                                                                        <div class="category-credit">
-                                                                            <label>
-                                                                                <input type="radio" id="credit-card" checked name="type-credit"> <img src="images/visa.svg" alt="" class="icon-img" srcset="">
-                                                                            </label>
-                                                                            <label>
-                                                                                <input type="radio" id="credit-card" name="type-credit"> <img src="images/mastercard.svg" alt="" class="icon-img" srcset="">
-                                                                            </label>
-                                                                        </div>
+                                                                <div class="col-lg-12">
+                                                                    <div class="detail-pembayaran">
+                                                                        <h3>Pembayaran</h3>
+                                                                        <p>&#9679; abraham setyan nugraha</p>
+                                                                        <p>&#9679; email@email.com</p>
+                                                                        <p>&#9679; jl psum dolor sit, amet consectetur elit Reiciendis</p>
+                                                                        <p>&#9679; 08988989898</p>
                                                                     </div>
-                                                                    <div class="form-group">
-                                                                        <label>Card Number <red>*</red></label>
-                                                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="0000 0000 0000 0000">
-                                                                    </div>
-                                                                    
-                                                                    
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group">
-                                                                        <label>Expiration Date <red>*</red></label>
-                                                                        <div class="form-inline">
-                                                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="MM" style="width: 50px;">
-                                                                            &nbsp; / &nbsp;
-                                                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="YY" style="width: 50px;">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label>CVV <red>*</red></label>
-                                                                        <div class="form-inline">
-                                                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="" style="width: 70px;"> &nbsp; <a href="http://"> What is this?</a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <br>
-                                                                    <div class="form-group">
-                                                                        <span>(<red><b>*</b></red>) tanda wajib untuk di isi.</span>
-                                                                    </div>
-                                                                    <br>
-                                                                    <div class="form-group">
-                                                                        <ul class="list-inline pull-right">
-                                                                            <li>
-                                                                                <button type="button" class="btn btn-default prev-step">Previous</button>
-                                                                            </li>
-                                                                            <li>
-                                                                                <button type="button" class="btn btn-printmarket next-step">Save and continue</button>
-                                                                            </li>
+                                                                   <div class="discount">
+                                                                        <div class="box-disc">
+                                                                            <span>Discount Codes</span> 
+                                                                            <input class="input-codes" type="text">
+                                                                            <a href="">APPLY</a>
+                                                                        </div> 
+                                                                   </div>
+                                                                    <div class="info-transfer">
+                                                                        <h3>Pilih Metode Pembayaran</h3>
+                                                                        <ul class="tabs">
+                                                                            <li class="tab-link current" data-tab="tab-1">Bank Transfer</li>
+                                                                            <li class="tab-link" data-tab="tab-2">Kartu Kredit</li>
                                                                         </ul>
+                                                                    
+                                                                        <div id="tab-1" class="tab-content current">
+                                                                            <div class="box-bank">
+                                                                                <div class="category-credit">
+                                                                                    <label>
+                                                                                        <input type="radio" id="bank" name="type-payment"> <img src="images/Logo_BCA.png" alt="" class="icon-img-bank" srcset=""> 
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="box-text-bank">
+                                                                                    <h4>BCA</h4>
+                                                                                    <p>No Rekening 0999999</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="box-bank">
+                                                                                <div class="category-credit">
+                                                                                    <label>
+                                                                                        <input type="radio" id="bank" name="type-payment"> <img src="images/Logo_BNI.png" alt="" class="icon-img-bank" srcset=""> 
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="box-text-bank">
+                                                                                    <h4>BNI</h4>
+                                                                                    <p>No Rekening 0999999</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div id="tab-2" class="tab-content">
+                                                                            <div class="box-credit">
+                                                                                <div class="category-credit">
+                                                                                    <label>
+                                                                                        <input type="radio" id="credit-card" name="type-payment"> <img src="images/visa.svg" alt="" class="icon-img" srcset=""> <img src="images/mastercard.svg" alt="" class="icon-img" srcset="">
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="box-text-credit">
+                                                                                    <h4>Veritrans</h4>
+                                                                                    <p>Pembayaran dengan kartu kredit Visa dan Mastercard</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
+                                                                
+                                                                <ul class="list-inline pull-right">
+                                                                    <li>
+                                                                        <button type="button" class="btn btn-default prev-step">Kembali</button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button type="button" class="btn btn-printmarket next-step">Simpan & Lanjut</button>
+                                                                    </li>
+                                                                </ul>
+                                                                
                                                             </div>
     
                                                         </div>
@@ -360,6 +340,14 @@
                                             <div class="tab-pane" role="tabpanel" id="complete">
                                                 <h3>Complete</h3>
                                                 <p>You have successfully completed all steps.</p>
+                                                <ul class="list-inline pull-right">
+                                                    <li>
+                                                        <button type="button" class="btn btn-default prev-step">Kembali</button>
+                                                    </li>
+                                                    <li>
+                                                        <button type="button" class="btn btn-printmarket">Selesai</button>
+                                                    </li>
+                                                </ul>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
@@ -374,26 +362,35 @@
                             </div>
                             <hr/>
                             <div class="box-cart__content">
-                                <div class="img-cart"></div>
                                 <div class="cart-detail">
                                     <h6><b>Calender</b></h6>
-                                    <h6>Rp.130.000</h6>
-                                    <h6>Jumlah : 1</h6>
+                                    <span>Subtotal : Rp.130.000, Weight : 1 kg, Jumlah : 1</span>
                                 </div>
                             </div>
                             <div class="box-cart__content">
-                                <div class="img-cart"></div>
                                 <div class="cart-detail">
                                     <h6><b>Calender</b></h6>
-                                    <h6>Rp.130.000</h6>
-                                    <h6>Jumlah : 1</h6>
+                                    <span>Subtotal : Rp.130.000, Weight : 1 kg, Jumlah : 1</span>
                                 </div>
                             </div>
                             <hr/>
-                            <div class="box-cart__count">
-                                <h6><b>Total :</b></h6>
-                                <h6>Rp.130.000</h6>
+                            <div class="box-cart__count footer-total">
+                                <h6 class="small-font">Shipping fee :</h6>
+                                <h6 class="small-font">Rp.0</h6>
                             </div>
+                            <div class="box-cart__count footer-total">
+                                <h6 class="small-font">File Check fee :</h6>
+                                <h6 class="small-font">Rp.0</h6>
+                            </div>
+                            <div class="box-cart__count footer-total">
+                                <h6 class="small-font">Admin fee</h6>
+                                <h6 class="small-font">Rp.0</h6>
+                            </div>
+                            <div class="box-cart__count footer-total">
+                                <h6><b>Total :</b></h6>
+                                <h6><b>Rp.130.000</b></h6>
+                            </div>
+                            <br>
                             <div class="box-cart__button">
                                 <button type="submit" class="btn btn-block btn-printmarket">Lorem Ipsum</button>
                             </div>
@@ -402,6 +399,86 @@
 
                 </div>
             </div>
+
+            <!-- Modal input address-->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Alamat Pengiriman</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <form >
+                            <div class="box-form-delivery-address" id="form-address" >
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group has-error">
+                                            <label for="exampleInputEmail1">Full Name <red>*</red></label>
+                                            
+                                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name" >
+                                                <input type="text" class="form-control" id="exampleInputPassword1" style="margin-top: 10px;" placeholder="Last Name">
+                                            
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Telephone <red>*</red></label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Telephone">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>City <red>*</red></label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="City">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Province <red>*</red></label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Province">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>District <red>*</red></label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="District">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputFile">Address <red>*</red></label>
+                                            <textarea name="" class="form-control" id="" cols="30" rows="7"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Postal Code <red>*</red></label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Postal Code">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Delivery <red>*</red></label>
+                                            <select class="form-control" name="" id="">
+                                                <option value="">- Select Courier -</option>
+                                                <option value="">J&T</option>
+                                            </select>
+                                            
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <span>(<red><b>*</b></red>) tanda wajib untuk di isi.</span>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                           
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-primary">Simpan</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
         </div>
         <div class="footer">
             <div class="container">
@@ -517,9 +594,29 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
         <script>
             $('.dropdown_content').css('display','block');
             $(document).ready(function () {
+
+                // tab bank transfer & credit card
+                $('ul.tabs li').click(function(){
+                    var tab_id = $(this).attr('data-tab');
+
+                    $('ul.tabs li').removeClass('current');
+                    $('.tab-content').removeClass('current');
+
+                    $(this).addClass('current');
+                    $("#"+tab_id).addClass('current');
+                });
+
+                //icheck
+                $('input').iCheck({
+                    checkboxClass: 'icheckbox_square-orange',
+                    radioClass: 'iradio_square-orange',
+                    increaseArea: '20%' // optional
+                })
+
                 //Initialize tooltips
                 $('.nav-tabs > li a[title]').tooltip();
                 
@@ -546,6 +643,16 @@
                     prevTab($active);
 
                 });
+
+                // action button show form
+                $('#btn-new-address').click(function () {
+                    $('#myModal').modal('show');
+                });
+
+                /* action btn save form address
+                $('#btn-save-address').click(function () {
+                    $('#form-address').hide();
+                }); */
             });
 
             function nextTab(elem) {

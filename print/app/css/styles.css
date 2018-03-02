@@ -436,6 +436,29 @@ h6 {
         line-height: 18px;
         color: #555555; }
 
+.info-page {
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  clear: both;
+  position: relative;
+  overflow: hidden; }
+
+.box-info-page {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .box-info-page h3 {
+    text-align: center; }
+  .box-info-page .icon-info-page {
+    width: 200px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    position: relative; }
+
 .product-slide {
   width: 100%;
   padding-top: 90px;

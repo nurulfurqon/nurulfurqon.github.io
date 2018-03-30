@@ -196,8 +196,9 @@
                                         <div class="form-group was-validated">
                                             <label for="exampleInputEmail1"><h3>Format</h3></label>
                                             <select class="form-control" id="selectFormat">
-                                                <option>9 x 5.4 cm</option>
-                                                <option>Vertical</option>
+                                                <option value="">- pilih -</option>
+                                                <option value="1">9 x 5.4 cm</option>
+                                                <option value="2">Vertical</option>
                                             </select>
                                             <small id="emailHelp" class="form-text text-muted">lorem ipsum dolor sit amet.</small>
                                         </div>
@@ -330,320 +331,322 @@
                 </div>
 
                 <div class="col-xl-12">
-                    <div class="row">
-                        <div class="delivery-product">
-                            <div class="header-title">
-                                <h2>2. Pilih Jumlah dan Tanggal Penerimaan</h2>
+                    <div class="delivery-product">
+                        <div class="box-not-select">
+                            <img src="./images/warning.svg" alt="" srcset="">
+                            <h3>Tolong lengkapi data form<br>di step pertama</h3>
+                        </div>
+                        <div class="header-title">
+                            <h2>2. Pilih Jumlah dan Tanggal Penerimaan</h2>
+                        </div>
+                        <hr>
+                        <div class="content">
+                            <div class="content__title">
+                                <div id="custom-jumlah">
+                                    <input id="customJumlah" value="" type="number" class="form-control" style="width: 110px;">
+                                    <p><b>pcs</b></p>
+                                    <button type="button" id="addJumlah" class="btn btn-primary"><i class="icon ion-checkmark-round icon-text"></i></button>
+                                </div>
+                                <button type="button" id="setJumlah" class="btn btn-primary">Custom Jumlah</button>
                             </div>
-                            <hr>
-                            <div class="content">
-                                <div class="content__title">
-                                    <div id="custom-jumlah">
-                                        <input id="customJumlah" value="" type="number" class="form-control" style="width: 110px;">
-                                        <p><b>pcs</b></p>
-                                        <button type="button" id="addJumlah" class="btn btn-primary"><i class="icon ion-checkmark-round icon-text"></i></button>
-                                    </div>
-                                    <button type="button" id="setJumlah" class="btn btn-primary">Custom Jumlah</button>
-                                </div>
-                                <small class="form-text text-muted">100 pcs - 50,000 pcs</small>
-                                <div class="content__table">
-                                    <!-- Button trigger modal -->
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th width="50px" class="red">
-                                                    <div class="table-head">
-                                                        <h4>Quantities</h4>
-                                                    </div>
-                                                </th>
-                                                <th class="red">
-                                                    <div class="table-head">
-                                                        <p>Reception Date</p>
-                                                        <h3>17 Jan <span>/ Senin</span></h3>
-                                                    </div>
-                                                </th>
-                                                <th class="red">
-                                                    <div class="table-head">
-                                                        <p>Reception Date</p>
-                                                        <h3>18 Jan <span>/ Selasa</span></h3>
-                                                    </div>
-                                                </th>
-                                                <th class="red">
-                                                    <div class="table-head">
-                                                        <p>Reception Date</p>
-                                                        <h3>19 Jan <span>/ Rabu</span></h3>
-                                                    </div>
-                                                </th>
-                                                <th class="red">
-                                                    <div class="table-head">
-                                                        <p>Reception Date</p>
-                                                        <h3>17 Jan <span>/ Kamis</span></h3>
-                                                    </div>
-                                                </th>
-                                                <th class="red">
-                                                    <div class="table-head">
-                                                        <p>Reception Date</p>
-                                                        <h3>18 Jan <span>/ Jumat</span></h3>
-                                                    </div>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                            <th class="no-padding">
-                                                <div class="table-quantities">
-                                                    <h4>100 pcs</h4>
+                            <small class="form-text text-muted">100 pcs - 50,000 pcs</small>
+                            <div class="content__table">
+                                <!-- Button trigger modal -->
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th width="50px" class="red">
+                                                <div class="table-head">
+                                                    <h4>Quantities</h4>
                                                 </div>
                                             </th>
-                                            <td class="no-padding">
-                                                <div class="button-price" data-toggle="modal" data-target="#uploadArtwork">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.600.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                           
-                                            </tr>
-                                            <tr>
-                                            <th class="no-padding">
-                                                <div class="table-quantities">
-                                                    <h4>100 pcs</h4>
+                                            <th class="red">
+                                                <div class="table-head">
+                                                    <p>Reception Date</p>
+                                                    <h3>17 Jan <span>/ Senin</span></h3>
                                                 </div>
                                             </th>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.600.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            
-                                            </tr>
-                                            <tr>
-                                            <th class="no-padding">
-                                                <div class="table-quantities">
-                                                    <h4>100 pcs</h4>
+                                            <th class="red">
+                                                <div class="table-head">
+                                                    <p>Reception Date</p>
+                                                    <h3>18 Jan <span>/ Selasa</span></h3>
                                                 </div>
                                             </th>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
+                                            <th class="red">
+                                                <div class="table-head">
+                                                    <p>Reception Date</p>
+                                                    <h3>19 Jan <span>/ Rabu</span></h3>
                                                 </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
+                                            </th>
+                                            <th class="red">
+                                                <div class="table-head">
+                                                    <p>Reception Date</p>
+                                                    <h3>17 Jan <span>/ Kamis</span></h3>
                                                 </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
+                                            </th>
+                                            <th class="red">
+                                                <div class="table-head">
+                                                    <p>Reception Date</p>
+                                                    <h3>18 Jan <span>/ Jumat</span></h3>
                                                 </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <th class="no-padding">
+                                            <div class="table-quantities">
+                                                <h4>100 pcs</h4>
+                                            </div>
+                                        </th>
+                                        <td class="no-padding">
+                                            <div class="button-price" data-toggle="modal" data-target="#uploadArtwork">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
                                                 </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.600.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
                                                 </div>
-                                            </td>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                       
+                                        </tr>
+                                        <tr>
+                                        <th class="no-padding">
+                                            <div class="table-quantities">
+                                                <h4>100 pcs</h4>
+                                            </div>
+                                        </th>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.600.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
                                         
-                                            </tr>
-                                            <tr>
-                                            <th class="no-padding">
-                                                <div class="table-quantities">
-                                                    <h4>100 pcs</h4>
+                                        </tr>
+                                        <tr>
+                                        <th class="no-padding">
+                                            <div class="table-quantities">
+                                                <h4>100 pcs</h4>
+                                            </div>
+                                        </th>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
                                                 </div>
-                                            </th>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.600.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
                                                 </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
                                                 </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
                                                 </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
                                                 </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="button-price">
-                                                    <div class="box-check">
-                                                        <i class="icon ion-checkmark-round icon-text"></i>
-                                                    </div>
-                                                    <div class="box-text">
-                                                        <h4>Rp.50.000</h4>
-                                                        <span>Rp.1.000 per unit</span>
-                                                    </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
                                                 </div>
-                                            </td>
-                                            
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    
+                                        </tr>
+                                        <tr>
+                                        <th class="no-padding">
+                                            <div class="table-quantities">
+                                                <h4>100 pcs</h4>
+                                            </div>
+                                        </th>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.600.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="button-price">
+                                                <div class="box-check">
+                                                    <i class="icon ion-checkmark-round icon-text"></i>
+                                                </div>
+                                                <div class="box-text">
+                                                    <h4>Rp.50.000</h4>
+                                                    <span>Rp.1.000 per unit</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -974,6 +977,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>-->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <!--build:js js/main.min.js -->
         <script>
             $('.dropdown_content').css('display','block');
@@ -1028,6 +1032,15 @@
                     $('#selectFormat').append('<option value="" selected="selected">'+widthC+' x '+heightC+' cm</option>');
                     $('#setCustom').show();
                     $('#custom-input').hide();
+                });
+
+                $('#selectFormat').change(function(){
+                    var format = $('#selectFormat').val();
+                    if (format != 0) {
+                        $('.box-not-select').hide();
+                    } else {
+                        $('.box-not-select').show();
+                    }
                 });
 
                 //

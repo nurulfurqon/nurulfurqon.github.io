@@ -720,7 +720,8 @@ h6 {
       .delivery-product .content__table .no-padding {
         padding: 0;
         border-top: none;
-        border-bottom: none; }
+        border-bottom: none;
+        position: relative; }
       .delivery-product .content__table .table-quantities {
         width: 100%;
         height: 100%;
@@ -826,6 +827,15 @@ h6 {
     padding: 15px; }
   .info-product .tab-content.current {
     display: inherit; }
+
+.box-td-disable {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.8);
+  cursor: not-allowed; }
 
 #uploadArtwork {
   /* Example stylistic flourishes */ }
